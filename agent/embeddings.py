@@ -1,4 +1,5 @@
 from langchain_openai import OpenAIEmbeddings
+from agent.config import EMBEDDING_MODEL
 
 def get_embedding_model():
-    return OpenAIEmbeddings(model="text-embedding-3-small")
+    return OpenAIEmbeddings(model=EMBEDDING_MODEL)
